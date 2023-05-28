@@ -1,0 +1,90 @@
+<html>
+    <head>
+        <title>SmartAtm</title>
+        <link rel="stylesheet"href="css/homestyle.css">
+        <script>
+            function updatetime()
+            {
+                var refresh = 1000;
+                setTimeout('display_currenttime()',refresh);
+            }
+            function display_currenttime()
+            {
+                var dt = new Date();
+                document.getElementById("ct").innerHTML = dt;
+                updatetime();
+            }
+        </script>
+    </head>
+            
+            <body class="animate" onload="display_currenttime()">
+                <!-- <table-I -->
+                    <table style="width:100% ;">
+                        <tr >
+                            <td  width="300px" height="200px">
+                                <img src="images/Atm.jpg" width="300px" height="200px">
+                            </td>
+                            <td style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  font-size: 70px;">Smart Atm</td>
+                        </tr>
+                        <tr>
+                            <td style="font-size:30px ; text-align:center">Smart Money</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" style="background-color:green ;"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <table>
+                                    <tr>
+                                        <td style="text-align: center;width:100px ;">
+                                            <a href="home.html">HOME</a>
+                                            </td>
+                                            <td style="text-align: center;width:100px ;">
+                                                <a href="LOGIN.html">LOGIN</a>
+                                                </td>
+                                                <td style="text-align: center;width:100px ;">
+                                                    <a href="aboutus.html">Aboutus</a>
+                                                    </td>
+                                                    <td style="text-align: center;width:100px ;">
+                                                        <a href="contactus.html">Contactus</a>
+                                                        </td>
+                                                        <td style="text-align: center;width:100px ;">
+                                                            <a href="help.html">Help</a>
+                                                            </td>
+                                                            <td style="text-align: center;width:100px ;">
+                                                                <a href="signup.html">Signup</a>
+                                                                </td>
+                                                                <td style="color: blue;width:700px;text-align: right;">
+                                                                    <b><span id="ct"></span></b>
+
+                                                                </td>
+                                          </tr>
+                                </table>
+                            </td>
+                            
+                        </tr>
+                        <tr>
+                            <td colspan="2" style="background-color:red ;"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">Home page...</td>
+                            
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <marquee behaviour="scroll" direction ="down" >
+                            <h1 style="color:tomato ;">
+                                at compact we are expert in all web 
+                            </h1>
+                        </marquee>
+                            <marquee behaviour="scroll"direction="left"scrollammount="15">netcore></marquee>
+                            <marquee behaviour="scroll"direction="right"scrollammount="25">phython></marquee>
+                            <marquee behaviour="scroll"direction="left"scrollammount="5">react></marquee>
+                            <marquee behaviour="scroll"direction="right"scrollammount="30">angular></marquee>
+                            </td>
+                        </tr>
+                    </table>
+            </body>
+        </head>
+    </head>
+</html>
